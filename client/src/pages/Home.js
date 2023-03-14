@@ -106,12 +106,6 @@ const Home = () => {
                     LogOut
                 </button>
             </div>
-
-            <footer>
-                <h4>
-                    Copyright © 2023 Code-Sync. &nbsp; All rights reserved.
-                </h4>
-            </footer>
         </div>
     );
 };
