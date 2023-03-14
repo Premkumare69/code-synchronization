@@ -14,7 +14,8 @@ const History = () => {
 
     async function getCode() {
         const userId = sessionStorage.getItem("user");
-        await axios.get(`http://localhost:3000/code/user/${userId}`)
+        // await axios.get(`http://localhost:3000/code/user/${userId}`)
+        await axios.get(`https://code-synchronization.onrender.com/code/user/${userId}`)
             .then((res) => {
                 console.log(res.data);
                 setCode(res.data)

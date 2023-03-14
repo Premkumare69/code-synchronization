@@ -10,7 +10,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 app.use(
     cors({
-        origin: ["http://localhost:5000", "http://code-synchronization.onrender.com"],
+        origin: ["code-synchronization-qw8a2j5ew-premkumare69.vercel.app", "http://code-synchronization.onrender.com"],
     })
 );
 
@@ -123,5 +123,6 @@ app.post("/saveroom", (req, res) => {
     res.send("SUCCESS")
 })
 
-app.listen(3000)
+// app.listen(3000)
+app.listen("code-synchronization-qw8a2j5ew-premkumare69.vercel.app")
 

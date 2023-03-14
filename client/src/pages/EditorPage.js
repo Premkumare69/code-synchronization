@@ -107,7 +107,8 @@ const EditorPage = () => {
             "date": today
         }
         console.log("POSTING DATA : ", sentData);
-        axios.post("http://localhost:3000/code", sentData)
+        // axios.post("http://localhost:3000/code", sentData)
+        axios.post("https://code-synchronization.onrender.com/code", sentData)
             .then((val) => {
                 toast.success('Code saved Successfully')
                 console.log(val);
