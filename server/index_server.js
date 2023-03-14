@@ -8,6 +8,11 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
+app.use(
+    cors({
+        origin:["http://localhost:5000", "http://code-synchronization.onrender.com"],
+    })
+);
 
 mongoose.set("strictQuery", false)
 mongoose.connect("mongodb://premkumar:premkumar123@ac-jqztstm-shard-00-00.ghsr1lj.mongodb.net:27017,ac-jqztstm-shard-00-01.ghsr1lj.mongodb.net:27017,ac-jqztstm-shard-00-02.ghsr1lj.mongodb.net:27017/?ssl=true&replicaSet=atlas-uqxzgf-shard-0&authSource=admin&retryWrites=true&w=majority")
