@@ -8,6 +8,7 @@ import 'codemirror/addon/edit/closebrackets';
 import ACTIONS from '../Actions';
 
 const Editor = ({ socketRef, roomId, onCodeChange }) => {
+    console.log("backend url : ", process.env.REACT_APP_BACKEND_URL);
     const editorRef = useRef(null);
     useEffect(() => {
         async function init() {
