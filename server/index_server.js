@@ -10,7 +10,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 app.use(
     cors({
-        origin: ["code-synchronization-qw8a2j5ew-premkumare69.vercel.app", "http://code-synchronization.onrender.com"],
+        origin: ["https://code-synchronization-qw8a2j5ew-premkumare69.vercel.app", "http://code-synchronization.onrender.com"],
     })
 );
 
