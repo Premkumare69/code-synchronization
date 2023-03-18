@@ -70,7 +70,7 @@ function Login() {
               Login
             </button>
             <p>
-              Already have an account?{" "}
+              Don't have an account?{" "}
               <span>
                 <Link to="/signup">Sign up</Link>
               </span>
